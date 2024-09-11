@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="color-principal" color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button text="back" defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text>
+    <p>Ingresa tu nombre de usuario o correo electrónico registrado.</p>
+  </ion-text>
+
+  <ion-item class="ion-margin-top">
+    <ion-icon name="mail-outline" slot="start"></ion-icon>
+    <ion-input placeholder="Correo o Nombre de Usuario" [(ngModel)]="emailOrUsername"></ion-input>
+  </ion-item>
+
+  <ion-button class="ion-margin-top" color="dark" expand="block" (click)="enviarRecuperacion()">
+    Enviar enlace de recuperación
+  </ion-button>
+
+  <ion-text *ngIf="mensaje" class="ion-text-center">
+    <p>{{ mensaje }}</p>
+  </ion-text>
+</ion-content>
