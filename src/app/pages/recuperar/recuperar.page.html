@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="color-principal" color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img src="assets/images/olvidar-clave.svg"></ion-img>
+
+  <ion-text>
+    <h2 class="ion-text-center">Recuperar Contrasena</h2>
+    <p>Ingresa tu correo:</p>
+  </ion-text>
+
+  <ion-item>
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-input label="Correo" label-placement="floating" fill="solid" class="ion-margin-start"></ion-input>
+  </ion-item>
+  <ion-button class="ion-margin-top" color="dark" expand="block" (click)="enviarRecuperacion()">
+    Enviar enlace de recuperación
+  </ion-button> 
+  <ion-text *ngIf="mensaje" class="ion-text-center">
+    <p>{{ mensaje }}</p>
+  </ion-text>
+</ion-content>
