@@ -1,0 +1,23 @@
+<ion-header>
+        <ion-toolbar class="color-principal">
+            <ion-buttons slot="start"><ion-back-button defaultHref="/login"></ion-back-button></ion-buttons>
+            <ion-title>Seleccione un Banco</ion-title>
+        </ion-toolbar>
+</ion-header>
+    
+<ion-content class="ion-padding color-principal">
+    
+        <ion-text>
+            <ion-row style="height: 120px;"></ion-row>
+            
+        </ion-text>
+        <ion-button class="ion-margin-top color-azul" expand="block" (click)="selectorBanco()">Banco De Chile</ion-button>
+        <ion-row style="height: 6px;"></ion-row>
+        <ion-button class="ion-margin-top color-rojo" expand="block" (click)="selectorBanco()">Banco Santander</ion-button>
+        <ion-row style="height: 6px;"></ion-row>
+        <ion-button class="ion-margin-top color-naranja" expand="block" (click)="selectorBanco()">BancoEstado</ion-button>
+        <ion-text>
+            <p class="ion-text-center"> </p>
+        </ion-text>
+    
+</ion-content>
