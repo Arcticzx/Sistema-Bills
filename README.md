@@ -1,4 +1,4 @@
-![imagen](https://github.com/user-attachments/assets/bf7766ac-9eea-4b43-a77c-2de260849f8f)
+![imagen](https://github.com/user-attachments/assets/5e8cd151-d2cc-4911-beff-1bc2738fcd1d)
 # Sistema Bills
 
 Es una demo de una aplicación Bancaria la cual recopila y junta diferentes bancos en una sola aplicación, cuenta con funcionalidad de Base de Datos de manera online.
